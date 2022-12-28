@@ -196,7 +196,7 @@ class scoreboard;
       else begin
         temp = data[tr.addr];
         
-        if ((tr.rdata == temp) || (tr.rdata == 145))
+        if (tr.rdata == temp)
           $display("DATA MATCH");
         else
           $display("DATA MISMATCH");
